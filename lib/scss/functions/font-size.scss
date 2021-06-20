@@ -1,0 +1,7 @@
+@function font-size($name) {
+  @if map-has-key($font-sizes, $name) {
+    @return map-get($font-sizes, $name);
+  }
+  @warn "Unknown `#{$name}` in $font-sizes.";
+  @return 18px;
+}

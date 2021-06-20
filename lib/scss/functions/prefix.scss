@@ -1,0 +1,3 @@
+@function prefix($selector) {
+  @return #{$project-prefix}-#{$selector};
+}

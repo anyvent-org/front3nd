@@ -1,0 +1,7 @@
+@function spacing($name) {
+  @if map-has-key($spacings, $name) {
+    @return map-get($spacings, $name);
+  }
+  @warn "Unknown `#{$name}` in $spacings.";
+  @return null;
+}
