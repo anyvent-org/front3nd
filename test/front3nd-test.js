@@ -1,0 +1,1 @@
+const test = require('@front3nd-test/js/test.js');

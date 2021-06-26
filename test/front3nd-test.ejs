@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      <%
+      print(htmlWebpackPlugin.files.css.map((cssFile) => {
+        if (cssFile.includes('critical') && !htmlWebpackPlugin.options.isDevelopment) {
+          return compilation.assets[cssFile.substr(htmlWebpackPlugin.files.publicPath.length)].source();
+        } else {
+          return '';
+        }
+      }).join(''));
+      %>
+    </style>
+    <%
+    print(htmlWebpackPlugin.files.css.map((cssFile) => {
+      if (!cssFile.includes('critical') || htmlWebpackPlugin.options.isDevelopment) {
+        return '<link rel="stylesheet" href="' + cssFile + '">';
+      } else {
+        return '';
+      }
+    }).join(''));
+    %>
+
+    <%
+    print(htmlWebpackPlugin.files.js.map((jsFile) => {
+      if (!jsFile.includes('critical') || htmlWebpackPlugin.options.isDevelopment) {
+        return '<script src="' + jsFile + '" defer></script>';
+      } else {
+        return '<script>' + compilation.assets[jsFile.substr(htmlWebpackPlugin.files.publicPath.length)].source() + '</script>';
+      }
+    }).join(''));
+    %>
+  </head>
+
+  <body>
+    <h1>Test</h1>
+  </body>
+</html>
