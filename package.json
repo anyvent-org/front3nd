@@ -48,7 +48,7 @@
   "homepage": "https://github.com/anyvent-org/front3nd#readme",
   "devDependencies": {
     "@oclif/dev-cli": "1.26.0",
-    "globby": "11.0.4"
+    "globby": "12.0.0"
   },
   "dependencies": {
     "@oclif/command": "1.8.0",
