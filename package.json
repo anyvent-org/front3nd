@@ -54,7 +54,7 @@
     "@oclif/config": "1.17.0",
     "@oclif/plugin-help": "3.2.3",
     "pkg-dir": "5.0.0",
-    "css-loader": "6.2.0",
+    "css-loader": "6.4.0",
     "css-minimizer-webpack-plugin": "3.0.2",
     "eslint": "7.32.0",
     "eslint-config-google": "0.14.0",
