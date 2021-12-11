@@ -16,7 +16,7 @@
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "lint": "eslint .",
-    "start": "cd test && webpack --config webpack.config.js --mode development",
+    "start": "cd test && webpack serve --config webpack.config.js --mode development",
     "prepack": "oclif-dev manifest && oclif-dev readme",
     "test": "cd test && webpack --config webpack.config.js --mode production",
     "version": "oclif-dev readme && git add README.md"
