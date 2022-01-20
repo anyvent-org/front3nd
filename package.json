@@ -1,6 +1,6 @@
 {
   "name": "@anyvent-org/front3nd",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Various frontend related fragments used across anyvent.org projects",
   "main": "index.js",
   "oclif": {
