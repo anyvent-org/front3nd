@@ -53,7 +53,7 @@
   "dependencies": {
     "@oclif/command": "1.8.16",
     "@oclif/config": "1.18.2",
-    "@oclif/plugin-help": "5.1.10",
+    "@oclif/plugin-help": "5.1.14",
     "pkg-dir": "5.0.0",
     "css-loader": "6.5.1",
     "css-minimizer-webpack-plugin": "3.4.1",
