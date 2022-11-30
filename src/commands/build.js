@@ -8,7 +8,7 @@ class BuildCommand extends Command {
 
     execSync(
       'webpack --config webpack.config.js --mode production',
-      { stdio: 'inherit', cwd: path.resolve(pkgDir.sync(), 'frontend') }
+      { stdio: 'inherit', cwd: path.resolve(pkgDir.packageDirectorySync(), 'frontend') }
     );
   }
 }

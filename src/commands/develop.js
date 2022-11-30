@@ -8,7 +8,7 @@ class DevelopCommand extends Command {
 
     execSync(
       'webpack serve --config webpack.config.js --mode development',
-      { stdio: 'inherit', cwd: path.resolve(pkgDir.sync(), 'frontend') }
+      { stdio: 'inherit', cwd: path.resolve(pkgDir.packageDirectorySync(), 'frontend') }
     );
   }
 }
