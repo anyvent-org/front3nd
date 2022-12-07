@@ -67,7 +67,7 @@
     "filemanager-webpack-plugin": "8.0.0",
     "html-loader": "4.2.0",
     "html-webpack-plugin": "5.5.0",
-    "mini-css-extract-plugin": "2.7.1",
+    "mini-css-extract-plugin": "2.7.2",
     "mini-svg-data-uri": "1.4.4",
     "node-sass": "8.0.0",
     "oclif": "3.3.0",
