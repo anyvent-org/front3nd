@@ -60,7 +60,7 @@
     "pkg-dir": "7.0.0",
     "css-loader": "6.7.2",
     "css-minimizer-webpack-plugin": "4.2.2",
-    "eslint": "8.28.0",
+    "eslint": "8.32.0",
     "eslint-config-google": "0.14.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
