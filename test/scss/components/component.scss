@@ -1,3 +1,6 @@
+@use "sass:math";
+
 .component {
   background: green;
+  width: math.div($padding, 3);
 }
