@@ -1,6 +1,6 @@
 {
   "name": "@anyvent-org/front3nd",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Various frontend related fragments used across anyvent.org projects",
   "engines": {
     "node": ">=18"
